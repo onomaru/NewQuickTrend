@@ -10,10 +10,11 @@ class TrendController extends Controller
     //テストアクション
     public function test()
     {
-        $consumer_key ='RR3oA89ro96p8GSbb0o7fcJ0D';
-        $consumer_secret ='KG9RpiBEqlXbzrnDtRdZJP9Lkfl7OV8vvfPEVIufvBEDgNf6Fp';
-        $access_token ='1222152368063574022-wOgwjNtzeeR8njBzDBiiHyD729NI2A';
-        $access_token_secret ='0xX6ChJM2GBzSwwfGEBTiJ3JCwp1YHBHbL9QeLklb2a0h';
+        //再生成して入力
+        $consumer_key ='';
+        $consumer_secret ='';
+        $access_token ='';
+        $access_token_secret ='';
 
         // APIに接続
         // $connection = new TwitterOAuth($consumer_key, $consumer_secret, $access_token, $access_token_secret);
@@ -31,10 +32,10 @@ class TrendController extends Controller
 
     public function home()
     {
-        $consumer_key ='RR3oA89ro96p8GSbb0o7fcJ0D';
-        $consumer_secret ='KG9RpiBEqlXbzrnDtRdZJP9Lkfl7OV8vvfPEVIufvBEDgNf6Fp';
-        $access_token ='1222152368063574022-wOgwjNtzeeR8njBzDBiiHyD729NI2A';
-        $access_token_secret ='0xX6ChJM2GBzSwwfGEBTiJ3JCwp1YHBHbL9QeLklb2a0h';
+        $consumer_key ='';
+        $consumer_secret ='';
+        $access_token ='';
+        $access_token_secret ='';
 
         //APIに接続
         $connection = new TwitterOAuth($consumer_key, $consumer_secret, $access_token, $access_token_secret);
@@ -61,11 +62,11 @@ class TrendController extends Controller
     
         $reqquery = ltrim($req->path(),'explore/');
         $req->session()->put('query',$reqquery);
-
-        $consumer_key ='RR3oA89ro96p8GSbb0o7fcJ0D';
-        $consumer_secret ='KG9RpiBEqlXbzrnDtRdZJP9Lkfl7OV8vvfPEVIufvBEDgNf6Fp';
-        $access_token ='1222152368063574022-wOgwjNtzeeR8njBzDBiiHyD729NI2A';
-        $access_token_secret ='0xX6ChJM2GBzSwwfGEBTiJ3JCwp1YHBHbL9QeLklb2a0h';
+        
+        $consumer_key ='';
+        $consumer_secret ='';
+        $access_token ='';
+        $access_token_secret ='';
 
         //APIに接続
         $connection = new TwitterOAuth($consumer_key, $consumer_secret, $access_token, $access_token_secret);
@@ -98,12 +99,12 @@ class TrendController extends Controller
     }
 
     public function tweet(Request $req){
-        $consumer_key ='RR3oA89ro96p8GSbb0o7fcJ0D';
-        $consumer_secret ='KG9RpiBEqlXbzrnDtRdZJP9Lkfl7OV8vvfPEVIufvBEDgNf6Fp';
 
+        $consumer_key ='';
+        $consumer_secret ='';
         //$user = $req->session()->get('TwitterAuth',)
-        $access_token ='1222152368063574022-wOgwjNtzeeR8njBzDBiiHyD729NI2A';
-        $access_token_secret ='0xX6ChJM2GBzSwwfGEBTiJ3JCwp1YHBHbL9QeLklb2a0h';
+        $access_token ='';
+        $access_token_secret ='';
 
         $connection = new TwitterOAuth($consumer_key, $consumer_secret, $access_token, $access_token_secret);
         //$connection->post("statuses/update", array("status" => 'てすと'));
